@@ -1,0 +1,28 @@
+Personagem = input("Digite o nome do seu personagem: ")
+Partido = input("Qual partido político você faz parte: ")
+Poder = input("Escolha um poder para seu personagem: ")
+
+
+confronto = input("Você está andando na rua e encontra um folheto no chão. Você deseja pegar esse folheto? (S/N): ")
+
+if confronto.lower() == "s":
+    print("Era um folheto. De repente, O Lula aparece na sua frente.")
+    confronto2 = input("Você deseja matar ele? (S/N): ")
+    if confronto2.lower() == "s":
+        print("Você assasinou o Lula!")
+    elif confronto2.lower() == "n":
+        print("Muito bem, companheiro.")
+    else:
+        print("Você digitou errado, companheiro!")
+elif confronto.lower() == "n":
+    print("Você ignorou o folheto e continuou andando.")
+    confronto3 = input("De repente o bolsonaro aparece na sua frente. Ele pergunta: - Você já agrediu uma petista? (S/N): ")
+    if confronto3.lower() == "s":
+        print("Muito bem, tá OK!")
+    elif confronto3.lower() == "n":
+        print("Ele puxa uma arma e te mata.")
+        print("GAME OVER!")
+    else:
+        print("Você digitou errado, tá OK!")
+else:
+    print("Você digitou errado, companheiro. tá OK!")
